@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap')
+
+$magenta: hsl(300, 43%, 22%)
+$soft-pink: hsl(333, 80%, 67%)
+$grey-magenta: hsl(303, 10%, 53%)
+$light-magenta: hsl(300, 24%, 96%)
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    font-family: 'Spartan', sans-serif
+    height: 100vh
+    display: flex
+    font-size: 15px        
+    line-height: 1.5
+    background: url("./images/bg-pattern-top-desktop.svg") left  top  no-repeat, url("./images/bg-pattern-bottom-desktop.svg") right bottom  no-repeat
+    justify-content: center
+    align-items: center
+
+.container
+    overflow: hidden
+    margin: 150px
+
+.content
+    display: flex
+    flex-direction: row
+    margin-bottom: 50px
+    align-items: center
+
+.intro
+    width: 50%
+    padding-right: 50px
+
+h1
+    line-height: 1
+    color: $magenta
+    margin: 15px 0px 15px 0px
+    font-size: 3em
+
+.intro > p 
+    color: $grey-magenta    
+
+.rating
+    width: 50%   
+    justify-content: center
+
+.row
+    display: flex
+    flex-direction: row
+    background-color: $light-magenta
+    border-radius: 7px
+    padding: 10px 25px 10px 25px
+    font-weight: bold
+    color: $magenta
+    margin: 15px
+    font-size: 12px
+    align-items: center
+    width: 400px
+
+.row1
+    margin-right: 80px
+
+.row2
+    margin: 0px 40px 0px 40px
+
+.row3
+    margin-left: 80px            
+
+.star
+    padding-right:  20px  
+
+.star > img
+    padding-right: 7px    
+
+.cards
+    display: flex
+    flex-direction: row    
+    font-size: 12px
+
+.user
+    width: 33.33%
+    padding: 40px 30px 40px 30px
+    background-color: $magenta    
+    border-radius: 7px
+    color: $light-magenta
+    line-height: 2
+
+.title
+    display: flex
+    flex-direction: row    
+    max-height: 50px
+    align-items: center
+    margin-bottom: 27px
+    line-height: 1.5
+
+.title > img
+    border-radius: 100px    
+    height: 38px
+
+.name
+    font-weight: bold    
+
+.status
+    color: $soft-pink  
+
+.info
+    margin-left: 20px    
+
+.user1
+    margin-bottom: 40px
+
+.user2
+    margin: 20px    
+
+.user3
+    margin-top: 40px    
+
+@media (max-width: 770px)
+    body
+        height: auto
+        font-size: 15px
+        background: url("./images/bg-pattern-top-mobile.svg") left  top  no-repeat, url("./images/bg-pattern-bottom-mobile.svg") right bottom  no-repeat
+
+    .container
+        margin: 20px
+    h1
+        font-size: 2em
+
+    .content
+        display: flex
+        flex-direction: column
+        margin-bottom: 20px
+
+    .intro
+        text-align: center
+        padding: 30px 0px 30px 0px
+        width: 100%
+
+    .rating
+        width: 100%
+
+    .row
+        display: flex
+        flex-direction: column
+        margin: 15px 0px 15px 0px 
+        width: auto  
+
+    .star > img
+        padding: 0px 3px 0px 3px
+
+    .star
+        padding: 0    
+
+    .cards
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 30px 0px 30px 0px
+    .user
+        width: auto
+        margin: 10px 0px 10px 0px
